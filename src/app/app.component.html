@@ -1,0 +1,15 @@
+<h2>Select a country for VISA details:</h2>
+<p-dropdown [options]="countries" (onChange)="onChange($event)"></p-dropdown>
+<br>
+<h1>Apply visa for Global fo</h1>
+<h1>Application Link: {{visaInfo.appointment_link}}</h1>
+<h1>Appointment Link: {{visaInfo.application_link}}</h1>
+<p><h1>Things To Note</h1></p>
+<p>All the Letters should be Addressed to the Visa officer Consulate General of France, Chennai "
+Since France consulate require apetrant Biometrics & Finger scanning, all applicants should appear in person with prior appointment to the VFS Center for submission of application.
+Note: If you have given your Biometrics & Finger scanning within 4 years please Reach Admin Team.
+All Documents should be submitted only thru VFS with Prior Appointment
+</h2></p>
+<h1 id="office-address">Office Address: {{visaInfo.office_address}}</h1>
+
+<iframe id="iframeid" width="450" height="250" style="border:0" [src]="visaInfo.map"></iframe>
